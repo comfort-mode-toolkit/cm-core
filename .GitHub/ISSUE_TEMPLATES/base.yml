@@ -1,0 +1,49 @@
+name: Base Feature Request
+description: Basic template for proposing a core feature or workflow for Comfort Mode Toolkit repos.
+title: "[Feature] <concise title here>"
+labels: ["feature", "core"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Base Feature Request
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Concisely describe the feature or workflow you are proposing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Problem Statement
+      description: What problem does this feature solve? Why is it needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution / Workflow
+      description: Outline how the feature should work, or the steps in the workflow. Include examples if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria / Definition of Done
+      description: What must be true for this feature to be considered complete?
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes or Context
+      description: (Optional) Add any extra context, links, or references for the issue.
+    validations:
+      required: false
